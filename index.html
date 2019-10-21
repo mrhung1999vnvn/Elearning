@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d72af0ed8d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+    <!-- Material button -->
+    <link href="//cdn.muicss.com/mui-0.10.0/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.0/js/mui.min.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <!-- customize CSS -->
+    <link rel="stylesheet" href="/publish/css/style.css" />
+    <title>Chương trình đánh giá - E_Learning</title>
+</head>
+
+<body class="">
+    <div class="container-Elearning" style="overflow-x: hidden;">
+        <div class="row" style="margin-bottom:50px;">
+            <div class=" col-md-12">
+                <div class="contain-navigation"></div>
+            </div>
+        </div>
+        <div class="col-md-12" style="background:#fff">
+            <div class="row text-center">
+
+                <!-- Section member 1 -->
+                <div class="col-md-6">
+                    <div class="container p-4">
+                        <div class="row member-container-infor">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12 p-2 member-header-container">
+                                        <div class="member-header">
+                                            <h2 id="name">Phạm Hoài Hưng</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="member-img">
+                                            <div id="img-member" class="img"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="member-content">
+                                            <div class="row">
+                                                <div class="col-md-12 ">
+                                                    <div class="row opinion-target">
+                                                        <div class="col-md-8">
+                                                            <div class="opinion-title">
+                                                                <p id="opinion">
+                                                                    1/ What the fuck can you do
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 border-left">
+                                                            <div class="opinion-star">
+                                                                <button id="rating1"
+                                                                    class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                    style="background:#ff7043  ">
+                                                                    Đánh giá
+                                                                </button>
+                                                                <div id="overlay1" class="overlay">
+                                                                    <div id="popup">
+                                                                        <form id="submit-form" action="#" method="POST">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-header">
+                                                                                        <p>Đánh giá</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-opinion">
+                                                                                        <p id="opinion">
+                                                                                            1/ Quá trình quá
+                                                                                            nguy hiểm
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <div class="stars">
+                                                                                        <input class="star star-5"
+                                                                                            id="star-5" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-5"
+                                                                                            for="star-5"></label>
+                                                                                        <input class="star star-4"
+                                                                                            id="star-4" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-4"
+                                                                                            for="star-4"></label>
+                                                                                        <input class="star star-3"
+                                                                                            id="star-3" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-3"
+                                                                                            for="star-3"></label>
+                                                                                        <input class="star star-2"
+                                                                                            id="star-2" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-2"
+                                                                                            for="star-2"></label>
+                                                                                        <input class="star star-1"
+                                                                                            id="star-1" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-1"
+                                                                                            for="star-1"></label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <input
+                                                                                        class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                                        style="height:90px;border-radius:50%; background:#ff7043"
+                                                                                        id="submit" type="submit"
+                                                                                        value="Xác nhận" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-3 border-top border-bottom">
+                                                    <div class="row opinion-target">
+                                                        <div class="col-md-8">
+                                                            <div class="opinion-title">
+                                                                <p id="opinion">
+                                                                    2/ What the fuck can you do
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 border-left">
+                                                            <div class="opinion-button">
+                                                                <button id="rating2"
+                                                                    class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                    style="background:#00e676 ">
+                                                                    Đánh giá
+                                                                </button>
+                                                                <div id="overlay2" class="overlay">
+                                                                    <div id="popup">
+                                                                        <form id="submit-form2" action="#"
+                                                                            method="POST">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-header">
+                                                                                        <p>Đánh giá</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-opinion">
+                                                                                        <p id="opinion">
+                                                                                            2/ Quá trình quá
+                                                                                            nguy hiểm
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <div class="stars">
+                                                                                        <input class="star star-5"
+                                                                                            id="star-11" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-5"
+                                                                                            for="star-11"></label>
+                                                                                        <input class="star star-4"
+                                                                                            id="star-9" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-4"
+                                                                                            for="star-9"></label>
+                                                                                        <input class="star star-3"
+                                                                                            id="star-8" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-3"
+                                                                                            for="star-8"></label>
+                                                                                        <input class="star star-2"
+                                                                                            id="star-7" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-2"
+                                                                                            for="star-7"></label>
+                                                                                        <input class="star star-1"
+                                                                                            id="star-6" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-1"
+                                                                                            for="star-6"></label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <input
+                                                                                        class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                                        style="height:90px;border-radius:50%; background:#00e676"
+                                                                                        id="submit" type="submit"
+                                                                                        value="Xác nhận" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-3">
+                                                    <div class="row opinion-target">
+                                                        <div class="col-md-8">
+                                                            <div class="opinion-title">
+                                                                <p id="opinion">
+                                                                    3/ What the fuck can you do
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 border-left">
+                                                            <div class="opinion-star">
+                                                                <button id="rating3"
+                                                                    class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                    style="background:#01579b  ">
+                                                                    Đánh giá
+                                                                </button>
+                                                                <div id="overlay3" class="overlay">
+                                                                    <div id="popup">
+                                                                        <form id="submit-form3" action="#"
+                                                                            method="POST">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-header">
+                                                                                        <p>Đánh giá</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-opinion">
+                                                                                        <p id="opinion">
+                                                                                            3/ Quá trình quá
+                                                                                            nguy hiểm
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <div class="stars">
+                                                                                        <input class="star star-5"
+                                                                                            id="star-16" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-5"
+                                                                                            for="star-16"></label>
+                                                                                        <input class="star star-4"
+                                                                                            id="star-15" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-4"
+                                                                                            for="star-15"></label>
+                                                                                        <input class="star star-3"
+                                                                                            id="star-14" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-3"
+                                                                                            for="star-14"></label>
+                                                                                        <input class="star star-2"
+                                                                                            id="star-13" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-2"
+                                                                                            for="star-13"></label>
+                                                                                        <input class="star star-1"
+                                                                                            id="star-12" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-1"
+                                                                                            for="star-12"></label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <input
+                                                                                        class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                                        style="height:90px;border-radius:50%; background:#01579b"
+                                                                                        id="submit" type="submit"
+                                                                                        value="Xác nhận" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Member 2  -->
+                <div class="col-md-6">
+                    <div class="container p-4">
+                        <div class="row member-container-infor">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12 p-2 member-header-container">
+                                        <div class="member-header">
+                                            <h2 id="name">Phạm Hoài Hưng</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="member-img">
+                                            <div id="img-member" class="img"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="member-content">
+                                            <div class="row">
+                                                <div class="col-md-12 ">
+                                                    <div class="row opinion-target">
+                                                        <div class="col-md-8">
+                                                            <div class="opinion-title">
+                                                                <p id="opinion">
+                                                                    1/ What the fuck can you do
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 border-left">
+                                                            <div class="opinion-star">
+                                                                <button id="rating1b"
+                                                                    class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                    style="background:#ff7043 ">
+                                                                    Đánh giá
+                                                                </button>
+                                                                <div id="overlay1b" class="overlay">
+                                                                    <div id="popup">
+                                                                        <form id="submit-form1b" action="#"
+                                                                            method="POST">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-header">
+                                                                                        <p>Đánh giá</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-opinion">
+                                                                                        <p id="opinion">
+                                                                                            1/ Quá trình quá
+                                                                                            nguy hiểm
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <div class="stars">
+                                                                                        <input class="star star-5"
+                                                                                            id="star-5b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-5"
+                                                                                            for="star-5b"></label>
+                                                                                        <input class="star star-4"
+                                                                                            id="star-4b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-4"
+                                                                                            for="star-4b"></label>
+                                                                                        <input class="star star-3"
+                                                                                            id="star-3b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-3"
+                                                                                            for="star-3b"></label>
+                                                                                        <input class="star star-2"
+                                                                                            id="star-2b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-2"
+                                                                                            for="star-2b"></label>
+                                                                                        <input class="star star-1"
+                                                                                            id="star-1b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-1"
+                                                                                            for="star-1b"></label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <input
+                                                                                        class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                                        style="height:90px;border-radius:50%; background:#ff7043"
+                                                                                        id="submit" type="submit"
+                                                                                        value="Xác nhận" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-3 border-top border-bottom">
+                                                    <div class="row opinion-target">
+                                                        <div class="col-md-8">
+                                                            <div class="opinion-title">
+                                                                <p id="opinion">
+                                                                    2/ What the fuck can you do
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 border-left">
+                                                            <div class="opinion-button">
+                                                                <button id="rating2b"
+                                                                    class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                    style="background:#00e676  ">
+                                                                    Đánh giá
+                                                                </button>
+                                                                <div id="overlay2b" class="overlay">
+                                                                    <div id="popup">
+                                                                        <form id="submit-form2b" action="#"
+                                                                            method="POST">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-header">
+                                                                                        <p>Đánh giá</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-opinion">
+                                                                                        <p id="opinion">
+                                                                                            2/ Quá trình quá
+                                                                                            nguy hiểm
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <div class="stars">
+                                                                                        <input class="star star-5"
+                                                                                            id="star-11b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-5"
+                                                                                            for="star-11b"></label>
+                                                                                        <input class="star star-4"
+                                                                                            id="star-9b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-4"
+                                                                                            for="star-9b"></label>
+                                                                                        <input class="star star-3"
+                                                                                            id="star-8b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-3"
+                                                                                            for="star-8b"></label>
+                                                                                        <input class="star star-2"
+                                                                                            id="star-7b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-2"
+                                                                                            for="star-7b"></label>
+                                                                                        <input class="star star-1"
+                                                                                            id="star-6b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-1"
+                                                                                            for="star-6b"></label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <input
+                                                                                        class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                                        style="height:90px;border-radius:50%; background:#81d4fa"
+                                                                                        id="submit" type="submit"
+                                                                                        value="Xác nhận" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-3">
+                                                    <div class="row opinion-target">
+                                                        <div class="col-md-8">
+                                                            <div class="opinion-title">
+                                                                <p id="opinion">
+                                                                    3/ What the fuck can you do
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 border-left">
+                                                            <div class="opinion-star">
+                                                                <button id="rating3b"
+                                                                    class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                    style="background:#01579b  ">
+                                                                    Đánh giá
+                                                                </button>
+                                                                <div id="overlay3b" class="overlay">
+                                                                    <div id="popup">
+                                                                        <form id="submit-form3b" action="#"
+                                                                            method="POST">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-header">
+                                                                                        <p>Đánh giá</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="popup-opinion">
+                                                                                        <p id="opinion">
+                                                                                            3/ Quá trình quá
+                                                                                            nguy hiểm
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <div class="stars">
+                                                                                        <input class="star star-5"
+                                                                                            id="star-16b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-5"
+                                                                                            for="star-16b"></label>
+                                                                                        <input class="star star-4"
+                                                                                            id="star-15b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-4"
+                                                                                            for="star-15b"></label>
+                                                                                        <input class="star star-3"
+                                                                                            id="star-14b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-3"
+                                                                                            for="star-14b"></label>
+                                                                                        <input class="star star-2"
+                                                                                            id="star-13b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-2"
+                                                                                            for="star-13b"></label>
+                                                                                        <input class="star star-1"
+                                                                                            id="star-12b" type="radio"
+                                                                                            name="star" />
+                                                                                        <label class="star star-1"
+                                                                                            for="star-12b"></label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-12 mb-3">
+                                                                                    <input
+                                                                                        class="btn mui-btn mui-btn--primary mui-btn--raised"
+                                                                                        style="height:90px;border-radius:50%; background:#01579b"
+                                                                                        id="submit" type="submit"
+                                                                                        value="Xác nhận" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 p-3" style="border:1px solid red">
+                            <div class="title-list-member text-center">
+                                <h2>The Support E-Learning Team</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12 p-4" style="border:1px solid green">
+                            <div class="row" style="border:1px solid blue;">
+                                <div class="col-md-3 m-2 p-3" style="border:1px solid green"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="./publish/js/jquery.session.js"></script>
+    <script src="./publish/js/countStar.js"></script>
+    <script>
+        //Function for popup
+        $(document).ready(function () {
+            $("#rating1").click(function () {
+                $("#overlay1").fadeIn(300);
+            });
+            $("#rating2").click(function () {
+                $("#overlay2").fadeIn(300);
+            });
+            $("#rating3").click(function () {
+                $("#overlay3").fadeIn(300);
+            });
+
+            $("#rating1b").click(function () {
+                $("#overlay1b").fadeIn(300);
+            });
+            $("#rating2b").click(function () {
+                $("#overlay2b").fadeIn(300);
+            });
+            $("#rating3b").click(function () {
+                $("#overlay3b").fadeIn(300);
+            });
+
+        });
+
+        //Prevent default action when submit
+        var box1, box2, box3, box4, box5;
+
+        //Function for click out of popup
+        $(document).click(e => {
+            var popup = $("#popup");
+            var container = $(".overlay");
+            if (!popup.is(e.target) && container.is(e.target)) {
+                // ... nor a descendant of the container
+                container.hide();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,4 +1,33 @@
-.rating-list-container {
+@import "./member/member.css";
+@import "./layout/header.css";
+@import "./layout//footer.css";
+:root {
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    font-family: var(--font-name-member);
+}
+
+h1 {
+    font-family: var(--font-name-member);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.btn-custom-rating{
+    
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+/* /*.rating-list-container {
     margin-top: 5%;
     margin-bottom: 15%;
     text-align: center;
@@ -18,7 +47,7 @@
 
 .employee-card:hover {
     /*box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);*/
-    transition: 0.3s;
+/*    transition: 0.3s;
     border: solid 3px #d0d0d0;
 
 }
@@ -89,4 +118,4 @@
     width: auto;
     object-fit: cover;
     margin-bottom: 5%;
-}
+} */

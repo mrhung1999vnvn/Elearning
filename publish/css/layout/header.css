@@ -1,0 +1,7 @@
+.contain-navigation{
+    height: 100px;
+    width: 100%;
+    background-image: url('/publish/images/luca-bravo-O453M2Liufs-unsplash.jpg');
+    position: fixed;
+    background-size: cover;
+}
