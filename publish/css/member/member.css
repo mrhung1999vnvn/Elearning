@@ -11,13 +11,13 @@
     border-radius: 30px 30px 10px 10px;
     cursor: pointer;
     transition: .5s ease;
-
+    background:#fff;
     -webkit-box-shadow: 1px 4px 28px -11px rgba(0, 0, 0, 0.89);
     -moz-box-shadow: 1px 4px 28px -11px rgba(0, 0, 0, 0.89);
     box-shadow: 1px 4px 28px -11px rgba(0, 0, 0, 0.89);
 }
 .member-container-infor:hover{
-    background:rgba(201, 208, 228, 0.45);
+    background: #fffda7;
 }
 
 .member-header-container {

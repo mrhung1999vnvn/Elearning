@@ -1,7 +1,8 @@
 .contain-navigation{
     height: 100px;
     width: 100%;
-    background-image: url('/publish/images/luca-bravo-O453M2Liufs-unsplash.jpg');
+    background-image: url('/publish/images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
     position: fixed;
+    opacity: .8;
     background-size: cover;
 }

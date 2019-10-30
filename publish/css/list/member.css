@@ -1,0 +1,76 @@
+.background-list {
+    background: url('/publish/images/mia-baker-cqkbESEkhjk-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.title-list-member {
+    color: #fff;
+}
+
+.container-list-member {
+    background: transparent;
+    border-radius: 20px;
+}
+
+
+.container-title-list-member {
+    border-radius: 30px;
+    background: #56c7de;
+    -webkit-box-shadow: 2px 4px 35px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 35px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 35px -8px rgba(0, 0, 0, 0.75);
+
+}
+
+.title-list-member span {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+}
+
+.member-list-image{
+    position: relative;
+    top:-50px;
+    width: 170px;
+    margin: auto;
+    height: 170px;
+}
+#image {
+    width: 100%;
+    height: 100%;
+    background-image: url('/publish/images/HungPham.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    -webkit-box-shadow: 10px -17px 26px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px -17px 26px -25px rgba(0,0,0,0.75);
+    box-shadow: 10px -17px 26px -25px rgba(0,0,0,0.75);
+}
+
+
+.container-member-child{
+    background:#fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 1px 26px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 1px 26px -10px rgba(0,0,0,0.75);
+    box-shadow: 6px 1px 26px -10px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: .3s ease;
+}
+.container-member-child:hover{
+    transform: scale(0.95);
+    color:#fff;
+    font-weight: 700;
+}
+

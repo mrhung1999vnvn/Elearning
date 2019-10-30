@@ -22,13 +22,12 @@
     border:3px solid #ffd369;
     max-width: 600px;
     width: 80%;
-    min-height: 500px;
+    min-height: 570px;
     height: 80%;
     padding: 20px;
     position: relative;
     background: #fff;
     margin: 20px auto;
-   
 }
 
 #close1,#close2,#close3{
