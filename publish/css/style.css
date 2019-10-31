@@ -18,14 +18,9 @@ h1 {
     text-transform: capitalize;
     font-weight: 600;
 }
-.btn-custom-rating{
-    
+p{
+    font-size:15px;
 }
-
-@media (max-width: 768px) {
-
-}
-
 
 
 

@@ -19,6 +19,7 @@
 .container-list-member {
     background: transparent;
     border-radius: 20px;
+    font-size:30px;
 }
 
 
@@ -72,5 +73,21 @@
     transform: scale(0.95);
     color:#fff;
     font-weight: 700;
+}
+
+
+
+/* Reponsive */
+@media screen and (max-width: 768px){
+    .title-list-member p{
+        font-size:20px !important;
+    }
+    .title-list-member span{
+       font-size:30px;
+    }
+}
+
+@media (max-width: 768px) {
+
 }
 
